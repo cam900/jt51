@@ -28,7 +28,8 @@
 
 module jt51_lfo_lfsr #(parameter init=220 )(
 	input	rst,
-	input	clk,
+    input   clk,
+	input	clk_en,
 	input	base,
 	output	out
 );
@@ -43,7 +44,7 @@ always @(posedge clk) begin : base_counter
 		bb			<= init[18:0];
 		last_base 	<= 1'b0;
 	end
-	else begin
+	else if( clk_en ) begin
 		last_base <= base;
 		if( last_base != base ) begin	
 			bb[18:1] 	<= bb[17:0];

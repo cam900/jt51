@@ -30,7 +30,8 @@
 
 module jt51_noise_lfsr #(parameter init=14220 )(
 	input	rst,
-	input	clk,
+    input   clk,
+	input	clk_en,
 	input	base,
 	output	out
 );
@@ -42,8 +43,8 @@ always @(posedge clk) begin : base_counter
 	if( rst ) begin
 		bb			<= init[16:0];
 	end
-	else begin
-		if(  base ) begin	
+	else if(clk_en) begin
+		if( base ) begin	
 			bb[16:1] 	<= bb[15:0];
 			bb[0]		<= ~(bb[16]^bb[13]);
 		end

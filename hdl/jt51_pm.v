@@ -29,7 +29,8 @@ module jt51_pm(
 );
 
 reg [9:0] lim;
-reg [13:0] kcex0, kcex1;
+reg [12:0] kcex0;
+reg [13:0] kcex1;
 reg [1:0] extra;
 
 reg [6:0] kcin;
