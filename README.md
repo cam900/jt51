@@ -1,3 +1,11 @@
+# JT51 FPGA Clone of Yamaha YM2151 FM synthesizer by Jose Tejada (@topapate)
+============================================================================
+
+You can show your appreciation through
+    * Patreon: https://patreon.com/topapate
+    * Paypal: https://paypal.me/topapate
+
+
 # JT51
 YM2151 clone in verilog. FPGA proven.
 (c) Jose Tejada 2016. Twitter: @topapate
