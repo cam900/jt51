@@ -2,9 +2,8 @@
 ============================================================================
 
 You can show your appreciation through
-    * Patreon: https://patreon.com/topapate
-    * Paypal: https://paypal.me/topapate
-
+* [Patreon](https://patreon.com/topapate), by supporting releases
+* [Paypal](https://paypal.me/topapate), with a donation
 
 # JT51
 YM2151 clone in verilog. FPGA proven.
